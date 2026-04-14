@@ -48,17 +48,13 @@ label {
     font-weight: 600;
 }
 
-input,
 textarea {
     width: 100%;
+    resize: vertical;
     border: 1px solid #cbd5e1;
     border-radius: 10px;
     padding: 12px;
     font: inherit;
-}
-
-textarea {
-    resize: vertical;
 }
 
 select {
@@ -93,7 +89,6 @@ select:hover {
     border-color: #93c5fd;
 }
 
-input:focus,
 select:focus,
 textarea:focus {
     outline: none;
@@ -185,6 +180,10 @@ img {
     z-index: 999;
 }
 
+.loading-overlay.hidden {
+    display: none;
+}
+
 .loading-card {
     width: min(420px, calc(100% - 32px));
     background: #fff;
@@ -209,10 +208,6 @@ img {
     margin: 0;
     color: #0f172a;
     font-weight: 600;
-}
-
-.hidden {
-    display: none !important;
 }
 
 @keyframes spin {
